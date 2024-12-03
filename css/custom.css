@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative; /* Ensure it has a stacking context */
+    z-index: 10; /* Ensure it stays on top of other elements */
+}
+
+.left .menu {
+    display: none;
+    cursor: pointer;
+}
+
+.left ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left ul li {
+    margin-left: 20px;
+}
+
+.left ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.png h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.right ul li {
+    margin-left: 20px;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+/* first-sec */
+
+.first-sec {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 13vh;
+}
+
+.left-sec:first-child {
+    margin-top: 10vh;
+
+}
+
+.left-sec p {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.left-sec span {
+    color:  #800020;
+}
+
+.left-sec .btn {
+    padding: 1.5vh 2.5vw;
+    border-radius: 15px;
+    font-size: 1rem;
+    border: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.4s;
+}
+
+.left-sec .btn:hover {
+    background-color: black;
+}
+
+.right-sec img {
+    height: 60vh;
+    width: 53vw;
+    border-radius: 50px;
+}
+
+/* second-sec */
+
+.second-sec h2 {
+    color: white;
+    margin-top: 10vh;
+    padding-top: 5vh;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.second-sec {
+    background-color: #800020;
+    border-radius: 30px;
+
+}
+
+.second-sec .collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10vh;
+}
+
+.image-container {
+    position: relative;
+    margin: 10px;
+}
+  
+.image-container img {
+    cursor: pointer;
+    width: 29vw;
+    height: 29vh;
+    border-radius: 1rem;
+    /* opacity: 0.4; */
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    /* transform: rotate(15deg); */
+    transform: scale(1.1); /* Increases size by 10% */
+    /* opacity: 1; */
+}
+  
+.overlay {
+    position: absolute;
+    bottom: 2rem; /* Position the text */
+    left: 2rem; /* Adjust as needed */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* collection2 */
+
+.second-sec .collection2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2vh;
+}
+
+/* Button */
+
+.btn2 {
+    display: flex;
+    justify-content: center;
+}
+
+.btn2 button {
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    border: none;
+    background-color: yellow;
+    color: black;
+    font-size: 1rem;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn2 button:hover {
+    background-color: beige;
+    color: black;
+}
+
+/* Footer*/
+
+.outer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 15rem;
+    position: relative;
+}
+
+#main-txt {
+    font-size: 2rem;
+}
+
+.box h3 {
+    margin-bottom: 1rem;
+}
+
+.box ul li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.4s;
+}
+
+.box ul li a:hover {
+    text-decoration: underline 0.2rem;
+    text-decoration-color: #800020;
+}
+
+.copys {
+    background-color: #333333;
+    color: white;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+/* Most Sale Collection */
+
+.head-sell {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+
+.sale-outer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 28rem;
+}
+
+.sale-outer .card {
+    height: 20rem;
+    width: 15rem;
+    border-radius: 20px;
+    border: 2.5px solid black;
+    /* background-color: beige; */
+}
+
+.sale-outer .card:hover {
+    outline: 2px solid black;
+    border-radius: 40px;
+}
+
+.card img {
+    width: 15rem;
+    height: 10rem;
+    border-radius: 20px;
+}
+
+.card .name {
+    text-align: center;
+    margin: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card .price {
+    text-align: center;
+    margin: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 15px;
+}
+
+.card h3 a {
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    padding: 0.6rem;
+    border-radius: 20px;
+    transition: 0.2s;
+    border: 1px solid black;
+}
+
+.card h3 a:hover {
+    background-color: rgb(255, 166, 0);
+}
+
+
+/* Contact Us */
+
+#sec-main {
+    padding: 6vw;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #3e8e41;
+  }
+
+  /* About Us */
+
+.head {
+    margin-top: 5vh;
+    font-size: 1.5rem;
+    text-decoration: underline red;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.content {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 1vh 10vw;
+    margin-bottom: 10vh;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content ul li span {
+    font-weight: 600;
+}
+
+.val {
+    font-size: 2rem;
+    text-decoration: underline red;
+    padding: 2vh;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1191px) {
+    .left ul li {
+        padding: 20px;
+    }
+    .png h1 {
+        display: flex;
+        justify-content: end;
+    }
+    .content {
+        padding: 1vh 5vw;
+    }
+    .left ul,
+    .right ul {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .left ul.show,
+    .right ul.show {
+        display: flex;
+    }
+
+    .left ul.show li,
+    .right ul.show li {
+    margin: 10px 0; /* Space between menu items */
+    text-align: center;
+    }
+
+    .left .menu {
+        display: block;
+    }
+
+    .left ul li,
+    .right ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .png h1 {
+        font-size: 1.8rem;
+    }
+  }
+
+@media screen and (max-width: 960px) {
+    .first-sec {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sale-outer {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50vh;
+    }
+    .second-sec .collection {
+        display: flex;
+        flex-direction: column;
+    }
+    .second-sec .collection2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-container img {
+        width: 60vw;
+        height: 35vh;
+    }
+    .card {
+        margin-top: 2rem;
+    }
+  }
+
+@media screen and (max-width: 840px) {
+    .first-sec {
+        margin-top: 3vh;
+    }
+    .left-sec {
+        margin-bottom: 4vh;
+    }
+    .right-sec img {
+        width: 75vw;
+    }
+    .left-sec .btn {
+        margin-left: 15vw;
+    }
+    .outer {
+        display: flex;
+        flex-direction: column;
+        height: 50rem;
+    }
+    .box h3 {
+        font-size: 2rem;
+    }
+    .box ul li {
+        font-size: 1rem;
+    }
+    #sec-main {
+        padding: 15vh 20vw;
+    }
+  }
+@media screen and (max-width: 577px) {
+    .png h1 {
+        font-size: 2rem;
+    }
+    .left .menu {
+        margin-bottom: 0.1vh;
+    }
+    .left-sec p {
+        font-size: 3rem;
+    }
+    .first-sec {
+        margin-top: 1vh;
+    }
+    .right-sec img {
+        height: 40vh;
+    }
+    .text-cng #element {
+        font-size: 0.8rem;
+    }
+    .image-container img {
+        width: 60vw;
+        height: 20vh;
+    }
+  }
+
+@media screen and (max-width: 459px) {
+    .sale-outer {
+        margin-bottom: 150vh;
+    }
+  }
+  
+@media screen and (max-width: 479px) {
+    .sale-outer {
+        margin-bottom: 150vh;
+    }
+    .png h1 {
+        font-size: 1.5rem;
+    }
+}

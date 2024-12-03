@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/contactUs.css" /> -->
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <title>VINTAGE VOGUE - The furniture Store</title>
+  </head>
+  <body>
+    <header>
+      <nav data-aos="fade-down">
+        <div class="left">
+          <div class="menu"><img src="Images/menu.svg" alt=""></div>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="#">CUSTOMERS</a></li>
+            <li><a href="#">BLOGS</a></li>
+          </ul>
+        </div>
+        <div class="png">
+          <h1>VINTAGE VOGUE</h1>
+          <!-- <img src="Images/main-pic.png" alt=""> -->
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">OUR STORY</a></li>
+            <li><a href="#">MY CART</a></li>
+            <li><a href="#"><img src="Images/cart.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="sec-main">
+      <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="outer">
+        <div class="box">
+          <h3 id="main-txt">VINTAGE VOGUE</h3>
+        </div>
+        <div class="box">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/">Contact Us</a></li>
+            <li><a href="/">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Get Help</h3>
+          <ul>
+            <li><a href="/">FAQ</a></li>
+            <li><a href="/">Shipping</a></li>
+            <li><a href="/">Returns</a></li>
+            <li><a href="/">Order Status</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a href="/"><img src="Images/face.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="Images/insta.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="Images/X.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="Images/link.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copys">
+        <p class="">
+          &copy; 2024 - VINTAGE VOGUE - Ecommerce. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
