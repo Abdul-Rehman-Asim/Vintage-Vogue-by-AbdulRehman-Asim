@@ -1,14 +1,8 @@
-// Text Changing Animation
 
-// var typed = new Typed('#element', {
-//     strings: ['<i>We make the ordinary, extraordinary.</i>', 
-//         '<i>Amazing Furniture, Even Better Price Tag.</i>'],
-//     typeSpeed: 50,
-//     loop: true,
-//   });
 
-  document.querySelector('.menu').addEventListener('click', () => {
-    const navMenu = document.querySelector('.left ul');
-    navMenu.classList.toggle('show');
-});
+let menu = document.querySelector(".menu");
+let left = document.querySelector(".left");
 
+menu.onclick = () => {
+  left.classList.toggle('show');
+};
